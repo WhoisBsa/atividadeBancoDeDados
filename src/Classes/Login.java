@@ -20,7 +20,7 @@ public class Login {
     ResultSet rs = null;
     
     public boolean checkLogin(String login, String senha) {
-        String sql = "select * from loginbd";
+        String sql = "select * from usuario";
         
         conexao = Conector.conectar();
         
@@ -30,10 +30,10 @@ public class Login {
             rs = pst.executeQuery();
             
             while(rs.next()) {
-                String lg = rs.getString("login");
-                String psw = rs.getString("senha");
+                String l = rs.getString("login");
+                String s = rs.getString("senha");
                 
-                if (lg.equals(login) && psw.equals(senha)) {
+                if (l.equals(login) && s.equals(senha)) {
                     return true;
                 }
             }
