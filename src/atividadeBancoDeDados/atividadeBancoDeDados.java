@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package LoginUserCLientBD;
+package atividadeBancoDeDados;
 
 import Views.*;
 
@@ -11,7 +11,7 @@ import Views.*;
  *
  * @author matheus
  */
-public class LoginBd {
+public class atividadeBancoDeDados {
 
     /**
      * @param args the command line arguments
