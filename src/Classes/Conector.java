@@ -12,8 +12,8 @@ import java.sql.DriverManager;
  * @author matheus
  */
 public class Conector {
-    public static final String driver = "com.mysql.jdbc.Driver";
-    public static final String url = "jdbc:mysql://localhost:3306/loginbd";
+    public static final String driver = "com.mysql.cj.jdbc.Driver";
+    public static final String url = "jdbc:mysql://localhost:3306/atividadeBD";
     public static final String user = "teste";
     public static final String psswd = "Rapadura.2000";
     
