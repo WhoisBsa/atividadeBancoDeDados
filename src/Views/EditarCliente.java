@@ -15,20 +15,20 @@ import java.sql.SQLException;
  *
  * @author matheus
  */
-public class EditView extends javax.swing.JFrame {
+public class EditarCliente extends javax.swing.JFrame {
     Cliente cliente = new Cliente();
-    Usuario user = new Usuario();
+    ViewCompleta user = new ViewCompleta();
     private String id;
     
     /**
      * Creates new form EditView
      */
-    public EditView() {
+    public EditarCliente() {
         initComponents();
         setLocationRelativeTo(null);
     }
     
-    public EditView(String id) {
+    public EditarCliente(String id) {
         this.id = id;
         initComponents();
         setLocationRelativeTo(null);
@@ -205,20 +205,21 @@ public class EditView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EditView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EditView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EditView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EditView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EditView().setVisible(true);
+                new EditarCliente().setVisible(true);
             }
         });
     }

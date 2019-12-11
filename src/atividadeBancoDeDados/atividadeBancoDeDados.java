@@ -17,8 +17,8 @@ public class atividadeBancoDeDados {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Home home = new Home();
+        ViewLogin login = new ViewLogin();
         
-        home.setVisible(true);
+        login.setVisible(true);
     }
 }

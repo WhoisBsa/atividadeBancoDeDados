@@ -14,13 +14,13 @@ import java.sql.SQLException;
  *
  * @author matheus
  */
-public class Usuario extends javax.swing.JFrame {
+public class ViewCompleta extends javax.swing.JFrame {
     Cliente cliente = new Cliente();
     
     /**
      * Creates new form Usuario
      */
-    public Usuario() {
+    public ViewCompleta() {
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -229,7 +229,7 @@ public class Usuario extends javax.swing.JFrame {
         String id = txtId.getText();
         
         if(cliente.checaId(id)){
-            EditView edit = new EditView(id);
+            EditarCliente edit = new EditarCliente(id);
         
             edit.setVisible(true);
         } else {
@@ -259,12 +259,10 @@ public class Usuario extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVizuActionPerformed
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
-        int input = JOptionPane.showConfirmDialog(rootPane, "Deseja mesmo sair?", "Sair", JOptionPane.YES_NO_OPTION);
-        
-        if(input == 0) {
-            new Home().setVisible(true);
-            this.dispose();
-        }
+        ViewLogin login = new ViewLogin();
+
+        login.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnSairActionPerformed
 
     /**
@@ -284,20 +282,27 @@ public class Usuario extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Usuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewCompleta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Usuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewCompleta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Usuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewCompleta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Usuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewCompleta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Usuario().setVisible(true);
+                new ViewCompleta().setVisible(true);
             }
         });
     }
